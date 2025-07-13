@@ -11,5 +11,5 @@ FROM nginx:alpine
 COPY --from=build /app/dist /usr/share/nginx/html
 # Copy custom Nginx config if needed
 # COPY nginx.conf /etc/nginx/nginx.conf
-EXPOSE 8080
+EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
